@@ -27,25 +27,32 @@
           CH28
           <span class="freq">530.0MHZ</span>
         </h3>
-        <div class="progess-bar scan">
-          <progress value="55" max="100"></progress>
+        <div class="bar scan">
+          <progress max="100" value="25">
+            <div pseudo="-webkit-progress-inner-element">
+              <div pseudo="-webkit-progress-bar">
+                <div class="-webkit-progress-value" style="width: 55%"></div>
+              </div>
+            </div>
+          </progress>
         </div>
         <h3 class="services scan">Searching services.....</h3>
         <div class="before-footer">
           <div class="items">
             <h4 class="meta">TV channels Found</h4>
-            <h5 class="value">16</h5>
+            <h5 class="value" id="">16</h5>
           </div>
           <div class="items">
             <h4 class="meta">Radio channels Found</h4>
-            <h5 class="value">0</h5>
+            <h5 class="value" id="">0</h5>
           </div>
         </div>
       </div>
       <div class="gotv footer">
-        <button>TV</button>
-        <a href="">Exit</a>
+        <button id="" onclick="move()">TV</button>
+        <a href="#">Exit</a>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

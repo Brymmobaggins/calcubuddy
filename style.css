@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #576ca8;
+  background-color: #4e7e6bcb;
   font-size: 15px;
   font-family: "Verdana", Tahoma;
   font-weight: 100;
@@ -59,19 +59,35 @@ section {
   padding-right: 90px;
 }
 .services {
-  padding-right: 180px;
+  margin-bottom: 30px;
+  padding: 5px;
+  padding-bottom: 15px;
+  display: block;
   font-weight: 100;
 }
-.progess-bar {
-  width: 100%;
-  padding: 2px;
-  display: block;
+.bar {
+  padding: 0px 20px;
+  margin: 1px 0px;
 }
-progress {
-  width: 85%;
-  padding: 8px 0px;
-  background-color: black;
-  border-radius: 25px;
+progress[value] {
+  display: inline-block;
+  width: 90%;
+  height: 22px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color: #fff;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #ffff;
+
 }
 .before-footer {
   padding: 10px 100px;
@@ -81,12 +97,12 @@ progress {
   display: flex;
   justify-content: space-between;
   width: 260px;
-  margin: auto 50px;
+  margin: auto 120px;
   padding: 5px;
   font-weight: 100;
 }
 .before-footer .items .value {
-  padding-right: 20px;
+  padding-left: 55px;
   font-weight: 100;
 }
 .footer {
@@ -99,7 +115,7 @@ progress {
 
 button {
   border: 2px solid #fff;
-  background-color: #2c42c07c;
+  background-color: green;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -115,7 +131,7 @@ button:hover {
 }
 .footer a {
   margin-right: 40px;
-  color: #860101;
+  color: #8b2e03;
   text-decoration: none;
   font-weight: 400;
 }
