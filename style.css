@@ -87,7 +87,6 @@ progress[value]::-webkit-progress-value {
   border-radius: 5px 0px 0px 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   border: 1px solid #ffff;
-
 }
 .before-footer {
   padding: 10px 100px;
@@ -115,7 +114,7 @@ progress[value]::-webkit-progress-value {
 
 button {
   border: 2px solid #fff;
-  background-color: green;
+  background-color: #008000;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -127,11 +126,12 @@ button {
   transition: 100ms;
 }
 button:hover {
-  border: 2px solid #fff;
+  border: 2px solid #008000;
+  outline: none;
 }
 .footer a {
   margin-right: 40px;
-  color: #8b2e03;
+  color: #8b0000;
   text-decoration: none;
   font-weight: 400;
 }
