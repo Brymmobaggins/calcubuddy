@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 .main {
-  background-image: url();
-  /* background-color: #008000; */
-  /* position: relative; */
+  background-image: url(/img/tv.jpg);
+  background-color: hsla(220, 4%, 14%, 0.705);
+  background-size: contain;
+  background-blend-mode: exclusion;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
+.main::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 body {
-  background-color: #2e2e2e;
+  background-color: #f5ecec;
   font-size: 15px;
   font-family: "Verdana", Tahoma;
   font-weight: 100;
@@ -19,14 +33,16 @@ section {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 50px;
+  padding: 50px ;
 }
 .topbar {
-  border: 2px solid #fff;
+  border: 0px solid #fff5f634;
   border-radius: 25px;
   width: 64%;
   height: 100px;
   margin: 0 auto;
+  background-color: #97979734;
+
 }
 .topbar .logo {
   width: 20%;
@@ -39,12 +55,13 @@ section {
   padding-top: 5px;
 }
 .gotv {
-  border: 2px solid #fff;
+  border: 0px solid #fff5f634;
   border-radius: 25px;
   margin: 0 auto;
   padding: 10px;
   height: 100px;
   width: 750px;
+  background-color: #97979734;
 }
 .body {
   height: 290px;
@@ -72,26 +89,23 @@ section {
 }
 .bar {
   padding: 0px 20px;
-  margin: 1px 0px;
+  margin: 1px 20px;
 }
-progress[value] {
-  display: inline-block;
-  width: 80%;
-  height: 22px;
-  -webkit-appearance: none;
-  appearance: none;
-}
-progress[value]::-webkit-progress-bar {
+#myProgress {
+  width: 100%;
   background-color: #000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #0000;
   border-radius: 5px;
-  border: 1px solid #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
-progress[value]::-webkit-progress-value {
+#myBar {
+  width: 9%;
+  height: 25px;
   background-color: #fff;
-  border-radius: 5px 0px 0px 5px;
+  border: none;
+  border: 1px solid #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-  border: 1px solid #ffff;
+  border-radius: 5px;
 }
 .before-footer {
   padding: 10px 100px;
@@ -118,7 +132,7 @@ progress[value]::-webkit-progress-value {
 }
 
 button {
-  border: 2px solid #fff;
+  border: 2px solid #fff5f634;
   background-color: #008000;
   border: none;
   outline: none;
@@ -128,16 +142,15 @@ button {
   cursor: pointer;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #fff;
   transition: 100ms;
 }
 button:hover {
   border: 2px solid #fff;
-  /* outline: none; */
 }
 .footer a {
   margin-right: 40px;
-  color: #8b0000;
+  color: #ff3a3a;
   text-decoration: none;
   font-weight: 400;
 }

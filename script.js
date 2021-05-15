@@ -1,11 +1,10 @@
 
 function move() {
-    // var value = 
     var elem = document.getElementById("myBar");
     var width = 20;
-    var id = setInterval(frame, 800);
+    var id = setInterval(frame, 250);
     function frame() {
-        if (width >= 80) {
+        if (width >= 100) {
             clearInterval(id);
         } else {
             width++;
