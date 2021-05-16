@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* styling the Background */
 .main {
-  background-image: url(/img/tv.jpg);
+  background-image: url(/img/tv.jpg); /* background-image */
   background-color: hsla(220, 4%, 14%, 0.705);
   background-size: contain;
-  background-blend-mode: exclusion;
+  background-repeat: initial;
+  background-blend-mode: hard-light;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -29,11 +31,12 @@ body {
   font-weight: 100;
   color: #fff;
 }
+/* styling the section that reference the body tag */
 section {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 50px ;
+  padding: 50px;
 }
 .topbar {
   border: 0px solid #fff5f634;
@@ -42,8 +45,8 @@ section {
   height: 100px;
   margin: 0 auto;
   background-color: #97979734;
-
 }
+/* styling the logo and header */
 .topbar .logo {
   width: 20%;
   float: left;
@@ -52,8 +55,9 @@ section {
 .topbar h1 {
   width: 80%;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 10px;
 }
+/*  styling the various section with secondary class */
 .gotv {
   border: 0px solid #fff5f634;
   border-radius: 25px;
@@ -91,6 +95,7 @@ section {
   padding: 0px 20px;
   margin: 1px 20px;
 }
+/* styling the progress bar */
 #myProgress {
   width: 100%;
   background-color: #000;
@@ -130,7 +135,7 @@ section {
   display: inline-block;
   text-align: end;
 }
-
+/* styling the Button and the Exit text */
 button {
   border: 2px solid #fff5f634;
   background-color: #008000;
@@ -141,18 +146,21 @@ button {
   padding: 10px 13px;
   cursor: pointer;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: #fff;
   transition: 100ms;
 }
+/*  when cursor hover on the button */
 button:hover {
   border: 2px solid #fff;
 }
+
 .footer a {
   margin-right: 40px;
   color: #ff3a3a;
   text-decoration: none;
   font-weight: 400;
+  letter-spacing: 1.5px;
 }
 a:hover {
   text-decoration: underline;

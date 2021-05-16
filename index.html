@@ -9,6 +9,7 @@
   </head>
   <body>
     <section class="main">
+      <!-- header -->
       <div class="topbar">
         <div class="logo">
           <img src="./img/gotv:_logo.jpg" />
@@ -17,6 +18,7 @@
           <h1>Automatic Scanning</h1>
         </div>
       </div>
+      <!-- Body  -->
       <div class="gotv body scan">
         <p>
           Automatic Scanning is in progress - please do not switch of your
@@ -25,8 +27,9 @@
         </p>
         <h3 class="channel-frequency scan">
           CH28
-          <span class="freq">530.0MHZ</span>
+          <span class="freq" id="MHZ">530.0MHZ</span>
         </h3>
+        <!-- Progress bar -->
         <div class="bar scan" id="">
           <div id="myProgress">
             <div id="myBar"></div>
@@ -36,14 +39,15 @@
         <div class="before-footer">
           <div class="items">
             <h4 class="meta">TV channels Found</h4>
-            <h5 class="value" id="load">0</h5>
+            <h5 class="value" id="television">0</h5>
           </div>
           <div class="items">
             <h4 class="meta">Radio channels Found</h4>
-            <h5 class="value" id="call">0</h5>
+            <h5 class="value" id="radio">0</h5>
           </div>
         </div>
       </div>
+      <!-- footer -->
       <div class="gotv footer">
         <button id="" onclick="move()">TV</button>
         <a href="#">Exit</a>

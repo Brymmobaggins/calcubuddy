@@ -9,8 +9,10 @@ function move() {
         } else {
             width++;
             elem.style.width = width + '%';
-            document.getElementById("load").innerHTML = width / 2 * 3 + '';
-            document.getElementById("call").innerHTML = width * 1 - 13 + '';
+            document.getElementById("television").innerHTML = width / 2 + 3 + ''; 
+            document.getElementById("radio").innerHTML = width * 1 - 13 + '';
+            document.getElementById("MHZ").innerHTML = width * 5 + 10.6 + 'MHZ';
+
         }
     }
 }
