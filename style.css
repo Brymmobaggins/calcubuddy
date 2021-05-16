@@ -5,7 +5,7 @@
 }
 /* styling the Background */
 .main {
-  background-image: url(/img/tv.jpg); /* background-image */
+  background-image: url(./img/tv.jpg); /* background-image */
   background-color: hsla(220, 4%, 14%, 0.705);
   background-size: contain;
   background-repeat: initial;
