@@ -9,7 +9,7 @@
   background-color: hsla(220, 4%, 14%, 0.705);
   background-size: contain;
   background-repeat: initial;
-  background-blend-mode: hard-light;
+  background-blend-mode:soft-light;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -29,7 +29,7 @@ body {
   font-size: 15px;
   font-family: "Verdana", Tahoma;
   font-weight: 100;
-  color: #fff;
+  color: #adcfff;
 }
 /* styling the section that reference the body tag */
 section {
@@ -113,19 +113,19 @@ section {
   border-radius: 5px;
 }
 .before-footer {
-  padding: 10px 100px;
+  display: flex;
+  padding: 10px 10px;
   margin-top: 25px;
 }
 .before-footer .items {
-  display: flex;
-  justify-content: space-between;
-  width: 260px;
-  margin: auto 120px;
+  width: 200px;
+  margin: 5px auto;
   padding-top: 10px;
   font-weight: 100;
 }
 .before-footer .items .value {
-  padding-left: 58px;
+  padding-left: 8px;
+  padding: 10px;
   font-weight: 100;
 }
 .footer {
@@ -135,7 +135,6 @@ section {
   display: inline-block;
   text-align: end;
 }
-/* styling the Button and the Exit text */
 button {
   border: 2px solid #fff5f634;
   background-color: #008000;
@@ -150,7 +149,6 @@ button {
   color: #fff;
   transition: 100ms;
 }
-/*  when cursor hover on the button */
 button:hover {
   border: 2px solid #fff;
 }
@@ -164,4 +162,60 @@ button:hover {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    display: flex;
+  }
+  .topbar {
+    width: 100%;
+    display: flex;
+  }
+  .topbar h1 {
+    text-align: center;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+  }
+  .bar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .channel-frequency h3 {
+    margin-right: 0px;
+  }
+  .before-footer {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .before-footer .items {
+    width: 340px;
+    text-align: center;
+    justify-content: space-around;
+    margin-right: 15px;
+    padding: 10px;
+  }
+  .before-footer .items .value {
+    padding: 10px;
+    justify-content: center;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer a {
+    margin-right: 5px;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  button:hover {
+    opacity: 5;
+  }
 }
