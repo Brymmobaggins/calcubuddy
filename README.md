@@ -19,5 +19,5 @@ futhermore, i created a script file to get my hands dirty on the Javascript. It 
   
 ## Resources
 
--[W3school](https://www.w3school.com) This helped in styling my custom'progress bar', I was pretty lost at some point.
--[Unsplash](https://www.unsplash.com) I was a bit indecisive choosing background images on the internet. I navigated to unsplash and it helps to make my rightful decision which i really love.
+[W3school](https://www.w3school.com) This helped in styling my custom'progress bar', I was pretty lost at some point.
+[Unsplash](https://www.unsplash.com) I was a bit indecisive choosing background images on the internet. I navigated to unsplash and it helps to make my rightful decision which i really love.
