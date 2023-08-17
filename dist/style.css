@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -534,7 +534,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-100 {
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  background-color: rgb(68 106 213 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 12px;
+}
+
+.font-roboto {
+  font-family: Roboto, sans - serif;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 320px) {
+  .mobile\:justify-between {
+    justify-content: space-between;
+  }
 }
