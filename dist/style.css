@@ -534,12 +534,60 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.right-2 {
+  right: 12px;
+}
+
+.top-2 {
+  top: 12px;
+}
+
+.m-1 {
+  margin: 8px;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
-.flex-row {
-  flex-direction: row;
+.hidden {
+  display: none;
+}
+
+.h-0\.5 {
+  height: 3px;
+}
+
+.h-4 {
+  height: 24px;
+}
+
+.w-5 {
+  width: 32px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-blue {
@@ -547,8 +595,22 @@ video {
   background-color: rgb(68 106 213 / var(--tw-bg-opacity));
 }
 
+.bg-sweeting {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 206 131 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 12px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-roboto {
@@ -564,8 +626,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 320px) {
-  .mobile\:justify-between {
-    justify-content: space-between;
-  }
+.active\:visible:active {
+  visibility: visible;
+}
+
+.active\:flex:active {
+  display: flex;
 }

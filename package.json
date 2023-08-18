@@ -10,6 +10,7 @@
     "any-promise": "^1.3.0",
     "anymatch": "^3.1.3",
     "arg": "^5.0.2",
+    "autoprefixer": "^10.4.15",
     "balanced-match": "^1.0.2",
     "binary-extensions": "^2.2.0",
     "brace-expansion": "^1.1.11",
@@ -56,6 +57,7 @@
     "pify": "^2.3.0",
     "pirates": "^4.0.6",
     "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-js": "^4.0.1",
     "postcss-load-config": "^4.0.1",
@@ -80,6 +82,7 @@
     "yaml": "^2.3.1"
   },
   "scripts": {
+    "tailwind:css": "postcss ./dist/tailwind.css -o ./dist/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
   },

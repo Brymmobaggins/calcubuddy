@@ -8,20 +8,29 @@
   </head>
   <body>
     <nav
-      class="flex flex-row mobile:justify-between font-roboto font-bold bg-blue text-white p-2"
+      class="flex flex-col justify-between font-roboto font-bold bg-blue text-white p-2"
     >
-      <div>
-        <a href="">CalcuBuddy</a>
+      <div class="m-1 md:text-xl">
+        <a href="#">CalcuBuddy</a>
       </div>
+      <a
+        id=""
+        class="toggle-button flex flex-col justify-between absolute right-2 top-2 w-5 h-4"
+      >
+        <span class="bg-white w-full h-0.5 rounded-lg"></span>
+        <span class="bg-white w-full h-0.5 rounded-lg"></span>
+        <span class="bg-white w-full h-0.5 rounded-lg"></span>
+      </a>
 
       <!-- Dropdown Menu -->
-      <div >
-        <ul>
+      <div class="w-full" id="nav">
+        <ul class="bg-sweeting w-full text-center">
           <li><a href="#">Linkedln</a></li>
           <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twtter</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
     </nav>
+    <script src="script.js"></script>
   </body>
 </html>
