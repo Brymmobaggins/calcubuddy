@@ -632,18 +632,22 @@ video {
   border-radius: 0.5rem;
 }
 
-.border-2{
-  border-width: 2px;
+.border{
+  border-width: 1px;
 }
 
-.bg-blue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 106 213 / var(--tw-bg-opacity));
+.border-2{
+  border-width: 2px;
 }
 
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-bondiblue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -668,6 +672,10 @@ video {
   font-family: Cabin;
 }
 
+.text-2xl{
+  font-size: 1.563rem;
+}
+
 .text-3xl{
   font-size: 1.953rem;
 }
@@ -685,13 +693,49 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.outline-0{
+  outline-width: 0px;
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
 
+.focus\:border-b:focus{
+  border-bottom-width: 1px;
+}
+
+.focus\:border-bondiblue:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity));
+}
+
+.focus\:border-opacity-50:focus{
+  --tw-border-opacity: 0.5;
+}
+
+.focus\:border-opacity-10:focus{
+  --tw-border-opacity: 0.1;
+}
+
+.focus\:border-opacity-100:focus{
+  --tw-border-opacity: 1;
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-1:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 @media (min-width: 320px){
-  .mobile\:max-w-\[250px\]{
-    max-width: 250px;
+  .mobile\:max-w-\[350px\]{
+    max-width: 350px;
   }
 
   .mobile\:flex-col{
@@ -699,13 +743,11 @@ video {
   }
 }
 
-@media (min-width: 690px){
-  .tablet\:max-w-\[400px\]{
-    max-width: 400px;
-  }
-}
-
 @media (min-width: 1024px){
+  .laptop\:max-w-\[600px\]{
+    max-width: 600px;
+  }
+
   .laptop\:flex-row{
     flex-direction: row;
   }
