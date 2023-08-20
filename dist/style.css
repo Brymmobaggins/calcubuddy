@@ -536,28 +536,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 320px){
-  .container{
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 690px){
-  .container{
-    max-width: 690px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
 .absolute{
   position: absolute;
 }
@@ -572,6 +550,10 @@ video {
 
 .m-1{
   margin: 8px;
+}
+
+.m-4{
+  margin: 24px;
 }
 
 .m-auto{
@@ -626,12 +608,24 @@ video {
   max-width: 28rem;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-5{
+  gap: 32px;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .rounded-lg{
@@ -654,6 +648,16 @@ video {
 
 .p-2{
   padding: 12px;
+}
+
+.px-1{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.py-2{
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .text-center{
@@ -683,4 +687,26 @@ video {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+@media (min-width: 320px){
+  .mobile\:max-w-\[250px\]{
+    max-width: 250px;
+  }
+
+  .mobile\:flex-col{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 690px){
+  .tablet\:max-w-\[400px\]{
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px){
+  .laptop\:flex-row{
+    flex-direction: row;
+  }
 }
