@@ -27,10 +27,15 @@ pixelInputEl.addEventListener('input', () => {
 
     // convert pixel to rem (i rem = 16 pixels)
     remInputEl.value = convertPixelToRem(pixelValue)
-    addColor()
-    // if(pixelInputEl.oninput){
-    //     remInputEl.classList.add("active")
-    // }
+     
+    if (pixelInputEl.value.trim() !== "") {
+        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-300');
+    } else {
+        remInputEl.classList.remove('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-300');
+    }
+
+
+
 
 })
 
@@ -38,13 +43,14 @@ remInputEl.addEventListener('input', () => {
     let remValue = remInputEl.value
 
     pixelInputEl.value = convertPixelToRem(remValue)
-    addColor()
 
+    // if (remInputEl.value.trim()  !== '') {
+    //     pixelInputEl.classList.add('active')
+    // }
 
 })
-function addColor() {
-    if (pixelInputEl.oninput) {
-        remInputEl.classList.add("active")
 
-    }
-}
+// function addS(remInputEl,pixelInputEl, borderColor,fontColor){
+//     if(remInputEl)
+
+// }

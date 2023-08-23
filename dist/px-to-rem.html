@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PX to REM</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <style>
+      .no-number-arrows::-webkit-inner-spin-button,
+      .no-number-arrows::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .no-number-arrows {
+        /* -moz-appearance: textfield; Firefox */
+        appearance: textfield; /* Chrome, Safari, Opera */
+      }
+    </style> -->
   </head>
   <body>
     <nav
@@ -58,7 +69,7 @@
           <!-- <label class="">Pixels</label> -->
           <div class="flex-1">
             <input
-              class="w-full block text-2xl text-center px-1 py-2 border border-slate-200 outline-0 focus:outline-none focus:ring-1 active:border-bondiblue-200 rounded appearance-none"
+              class="w-full block text-2xl text-center px-1 py-2 border border-slate-200 focus:outline-slate-300 focus:ring-1 rounded no-number-arrows"
               id="px-input"
               type="number"
               placeholder="PX"
@@ -67,7 +78,7 @@
           <!-- <label>REM</label> -->
           <div class="flex-1">
             <input
-              class="w-full block text-2xl text-center px-1 py-2 border border-slate-200 outline-0 focus:outline-none active:border-bondiblue-500 focus:ring-1 rounded"
+              class="w-full block text-2xl text-center px-1 py-2 border border-slate-200 focus:outline-slate-300 focus:ring-1 rounded no-number-arrows"
               id="rem-input"
               type="number"
               placeholder="REM"
