@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PX to REM</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <style>
-      .no-number-arrows::-webkit-inner-spin-button,
-      .no-number-arrows::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      .no-number-arrows {
-        /* -moz-appearance: textfield; Firefox */
-        appearance: textfield; /* Chrome, Safari, Opera */
-      }
-    </style> -->
+    <!-- ionic icon module -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
+    <!-- navbar and header -->
     <nav
-      class="flex flex-col justify-between font-cabin font-bold bg-bondiblue-600 text-white text-xl p-2"
+      class="flex flex-col justify-between font-cabin font-bold bg-bondiblue-600 text-white text-2xl p-2"
     >
+      <!-- brand name -->
       <div class="m-1 md:text-base">
         <a href="/dist/index.html">CalcuBuddy</a>
       </div>
-      <a
-        id=""
-        class="toggle-button hover:cursor-pointer flex flex-col justify-between absolute right-2 top-2 w-5 h-4"
-      >
-        <span class="bg-white w-full h-0.5 rounded-lg"></span>
-        <span class="bg-white w-full h-0.5 rounded-lg"></span>
-        <span class="bg-white w-full h-0.5 rounded-lg"></span>
+      <!-- harmburger menu icon and close icon -->
+      <a id="toggle-button" class="hover:cursor-pointer absolute right-2 top-4">
+        <span class="block">
+          <ion-icon name="menu" size="large" onclick="menu(this)"></ion-icon>
+        </span>
+        <span class="hidden">
+          <ion-icon name="close" size="large"></ion-icon>
+        </span>
       </a>
-
-      <!-- Dropdown Menu Nav liink -->
+      <!-- navigation menu -->
       <div class="w-full hidden" id="nav">
         <ul class="w-full text-center">
           <li><a href="#">Linkedln</a></li>

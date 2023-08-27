@@ -554,6 +554,18 @@ input[type="number"]::-webkit-inner-spin-button,
   top: 12px;
 }
 
+.top-6{
+  top: 48px;
+}
+
+.top-3{
+  top: 16px;
+}
+
+.top-4{
+  top: 24px;
+}
+
 .m-1{
   margin: 8px;
 }
@@ -708,9 +720,9 @@ input[type="number"]::-webkit-inner-spin-button,
   font-weight: 700;
 }
 
-.text-bondiblue-300{
+.text-bondiblue-500{
   --tw-text-opacity: 1;
-  color: rgb(103 221 249 / var(--tw-text-opacity));
+  color: rgb(6 172 212 / var(--tw-text-opacity));
 }
 
 .text-white{
