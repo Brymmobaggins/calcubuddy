@@ -39,7 +39,7 @@ pixelInputEl.addEventListener('input', () => {
     remInputEl.value = convertPixelToRem(pixelValue)
 
     if (pixelInputEl.value.trim() !== "") {
-        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500');
+        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500','animate-pulse');
     } else {
         remInputEl.classList.remove('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500');
     }
