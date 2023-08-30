@@ -582,10 +582,6 @@ input[type="number"]::-webkit-inner-spin-button,
   display: block;
 }
 
-.inline-block{
-  display: inline-block;
-}
-
 .inline{
   display: inline;
 }
@@ -600,18 +596,6 @@ input[type="number"]::-webkit-inner-spin-button,
 
 .hidden{
   display: none;
-}
-
-.h-6{
-  height: 48px;
-}
-
-.w-4{
-  width: 24px;
-}
-
-.w-5{
-  width: 32px;
 }
 
 .w-full{

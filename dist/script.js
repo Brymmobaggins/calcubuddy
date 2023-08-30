@@ -2,6 +2,7 @@
 const harmburger = document.getElementById("toggle-button")
 const pixelInputEl = document.getElementById('px-input')
 const remInputEl = document.getElementById('rem-input')
+const percentageInputEl = document.getElementById('percentage')
 const navMenu = document.getElementById('nav')
 
 
@@ -11,10 +12,8 @@ harmburger.addEventListener('click', function () {
 
 })
 
-
-
 // change menu icon to close icon
-function menu(e){
+function menu(e) {
     e.name === "menu" ? (e.name = "close") : (e.name = "menu")
 }
 
@@ -28,6 +27,10 @@ const convertPixelToRem = (pixel) => {
     return pixel / 16
 
 }
+// Convert from pixels (px) to percentages (%)
+function pxToPercentage(pixel) {
+    return pixel * 100
+}
 
 // listen for input event on pixel input element
 pixelInputEl.addEventListener('input', () => {
@@ -39,7 +42,7 @@ pixelInputEl.addEventListener('input', () => {
     remInputEl.value = convertPixelToRem(pixelValue)
 
     if (pixelInputEl.value.trim() !== "") {
-        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500','animate-pulse');
+        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500', 'animate-pulse');
     } else {
         remInputEl.classList.remove('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500', 'animate-pulse');
     }
@@ -59,4 +62,25 @@ remInputEl.addEventListener('input', () => {
     }
 
 })
+percentageInputEl.addEventListener('input', () => {
+    let percentageValue = percentageInputEl.value
+    let pixelValue = pxToPercentage(percentageValue)
+    pixelInputEl.value = pixelValue
+
+
+})
+
+function addTailwind(percentageInputEl, remInputEl, pixelInputEl) {
+    if (remInputEl.value.trim() !== "" || percentageInputEl.value.trim() !== "") {
+        pixelInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
+    } else if (pixelInputEl.value.trim() !== " ") {
+        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
+    }else if(percentageInputEl.value.trim() !== " "){
+        pixelInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
+
+    }
+
+
+
+}
 
