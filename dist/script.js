@@ -1,9 +1,9 @@
 // 
-const harmburger = document.getElementById("toggle-button")
-const pixelInputEl = document.getElementById('px-input')
-const remInputEl = document.getElementById('rem-input')
-const percentageInputEl = document.getElementById('percentage')
 const navMenu = document.getElementById('nav')
+const harmburger = document.getElementById("toggle-button")
+let pixelInputEl = document.getElementById('px-input')
+let remInputEl = document.getElementById('rem-input')
+let percentageInputEl = document.getElementById('percentage-input')
 
 
 // nav harmbugger
@@ -42,9 +42,9 @@ pixelInputEl.addEventListener('input', () => {
     remInputEl.value = convertPixelToRem(pixelValue)
 
     if (pixelInputEl.value.trim() !== "") {
-        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500', 'animate-pulse');
+        remInputEl.classList.add('showColor')
     } else {
-        remInputEl.classList.remove('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500', 'animate-pulse');
+        remInputEl.classList.remove('showColor');
     }
 
 })
@@ -53,34 +53,14 @@ pixelInputEl.addEventListener('input', () => {
 remInputEl.addEventListener('input', () => {
     let remValue = remInputEl.value
 
-    pixelInputEl.value = convertPixelToRem(remValue)
+    pixelInputEl.value = convertRemToPixel(remValue)
 
     if (remInputEl.value.trim() !== "") {
-        pixelInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500');
+        pixelInputEl.classList.add("showColor");
     } else {
-        pixelInputEl.classList.remove('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500');
+        pixelInputEl.classList.remove('showColor')
     }
 
 })
-percentageInputEl.addEventListener('input', () => {
-    let percentageValue = percentageInputEl.value
-    let pixelValue = pxToPercentage(percentageValue)
-    pixelInputEl.value = pixelValue
 
-
-})
-
-function addTailwind(percentageInputEl, remInputEl, pixelInputEl) {
-    if (remInputEl.value.trim() !== "" || percentageInputEl.value.trim() !== "") {
-        pixelInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
-    } else if (pixelInputEl.value.trim() !== " ") {
-        remInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
-    }else if(percentageInputEl.value.trim() !== " "){
-        pixelInputEl.classList.add('border-bondiblue-700', 'ring-1', 'ring-bondiblue-600', 'text-bondiblue-500')
-
-    }
-
-
-
-}
 
